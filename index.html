@@ -10,25 +10,26 @@
                 maximum-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="img/icon/favicon.ico">
 
-    <!-- Claims -->
-    <meta name="p:domain_verify" content="0efea96c412f03842412e6577dae08dc"/>
-
-    <!-- Load fonts as soon as possible -->
+    <!-- FONT CSS (load fonts as soon as possible) -->
     <style>
-    @font-face { font-family: 'Ubuntu'; font-weight: 400; font-style: normal;
-      src: local('Ubuntu Regular'), local('Ubuntu-Regular')
-        , url(font/ubuntu-regular.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-        U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+    @font-face { font-family: 'Ubuntu Condensed';
+      font-weight: 400; font-style: normal;
+      src: local('Ubuntu Regular'), local('UbuntuCondensed-Regular')
+        , url(asset/font/ubuntucondensed-regular.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6
+        , U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193
+        , U+2212, U+2215, U+FEFF, U+FFFD;
     }
     </style>
 
     <style>
-        body { background:#000; color:#fff; }
-        body { font:18px Ubuntu, Arial; text-align:center; }
+        body { background:#000; color:#fff; text-align:center; }
+        body { font:18px "Ubuntu Condensed", "Ubuntu", Arial, sans-serif; }
+        *::selection { background:#339; color:#fff; }
         h1, h2, h3, h4, h5, h6 { font-weight:normal; }
         h1 { margin-top: -1em; color:#fff; }
-        h2 { margin-top: -0.7em; color:#52a3df; }
+        h2 { margin-top: -0.7em; color:#5599F8; }
+        a { outline:none!important; }
         a, a:visited { color:#0cf; transition:color 0.5s; }
         a:hover { color:#3c0; }
         img { display:inline-block; width:256px; height:256px; margin-top:1em; }
@@ -50,9 +51,11 @@
   </head>
   <body>
 
-    <img src="img/icon/undo3d-icon-v4-square-512px.jpg" alt="Undo3D Logo">
+    <img src="img/icon/undo3d-icon-v5-512px.jpg" alt="Undo3D Logo">
     <h1>Undo3D</h1>
     <h2>Coming Soon</h2>
+    <a href="https://twitter.com/Undo3D">@Undo3D</a> &nbsp;
+    <a href="https://gitlab.com/Undo3D/undo3d">Repo</a>
 
   </body>
 </html>
